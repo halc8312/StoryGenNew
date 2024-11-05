@@ -1,0 +1,71 @@
+.plotline-suggestions {
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.suggestions-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.suggestions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.suggestion-item {
+  padding: 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  background: #f8f9fa;
+}
+
+.suggestion-content {
+  margin-bottom: 1rem;
+}
+
+.suggestion-content h4 {
+  margin: 0 0 0.5rem 0;
+  color: #2c3e50;
+}
+
+.suggestion-details {
+  display: flex;
+  gap: 1rem;
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.suggestion-hints {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  background: #fff;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.add-plotline-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.add-plotline-button:hover {
+  background-color: #45a049;
+}
+
+.no-suggestions {
+  text-align: center;
+  color: #666;
+  padding: 1rem;
+}

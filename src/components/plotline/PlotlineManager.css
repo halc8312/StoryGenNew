@@ -1,0 +1,61 @@
+.plotline-manager {
+  padding: 1rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.plotline-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.plotline-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.suggest-plotlines-button,
+.analyze-plotlines-button,
+.add-plotline-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s;
+}
+
+.suggest-plotlines-button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.suggest-plotlines-button:hover:not(:disabled) {
+  background-color: #45a049;
+}
+
+.analyze-plotlines-button {
+  background-color: #2196F3;
+  color: white;
+}
+
+.analyze-plotlines-button:hover:not(:disabled) {
+  background-color: #1e88e5;
+}
+
+.add-plotline-button {
+  background-color: #9c27b0;
+  color: white;
+}
+
+.add-plotline-button:hover:not(:disabled) {
+  background-color: #8e24aa;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

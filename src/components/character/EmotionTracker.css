@@ -1,0 +1,62 @@
+.emotion-tracker {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #eee;
+}
+
+.emotion-tracker h5 {
+  margin: 0 0 12px 0;
+  font-size: 1rem;
+  color: #2c3e50;
+}
+
+.emotion-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+.emotion-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.emotion-item:hover {
+  background-color: #f8f9fa;
+}
+
+.emotion-indicator {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-bottom: 4px;
+  border: 2px solid var(--emotion-color);
+  transition: all 0.2s ease;
+}
+
+.emotion-indicator.intensity-0 {
+  background-color: transparent;
+}
+
+.emotion-indicator.intensity-1 {
+  background-color: color-mix(in srgb, var(--emotion-color) 33%, transparent);
+}
+
+.emotion-indicator.intensity-2 {
+  background-color: color-mix(in srgb, var(--emotion-color) 66%, transparent);
+}
+
+.emotion-indicator.intensity-3 {
+  background-color: var(--emotion-color);
+}
+
+.emotion-label {
+  font-size: 0.8rem;
+  color: #666;
+  text-align: center;
+}

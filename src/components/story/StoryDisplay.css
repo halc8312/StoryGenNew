@@ -1,0 +1,86 @@
+.story-content {
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  line-height: 1.6;
+}
+
+.story-content p {
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+.selection-controls {
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+.selection-controls p {
+  margin: 0 0 0.5rem 0;
+  color: #495057;
+  font-weight: 500;
+}
+
+.selected-text {
+  margin: 0.5rem 0;
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+  border-left: 3px solid #dc3545;
+  color: #495057;
+}
+
+.delete-selection-button {
+  margin-top: 0.5rem;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.delete-selection-button:hover {
+  background-color: #c82333;
+}
+
+.story-actions {
+  margin: 1rem 0;
+  display: flex;
+  gap: 1rem;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+  .story-content {
+    padding: 0.8rem;
+    font-size: 16px;
+    margin: 0.5rem 0;
+  }
+
+  .selection-controls {
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+  }
+
+  .selected-text {
+    padding: 0.5rem;
+    font-size: 14px;
+  }
+
+  .story-actions {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .delete-selection-button {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 16px;
+  }
+}

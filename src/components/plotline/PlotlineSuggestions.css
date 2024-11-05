@@ -1,0 +1,111 @@
+.plotline-suggestions {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.plotline-suggestions.loading,
+.plotline-suggestions.error {
+  text-align: center;
+  padding: 40px;
+}
+
+.spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 20px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.suggestions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.suggestion-item {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.suggestion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.suggestion-header h5 {
+  margin: 0;
+  color: #2c3e50;
+}
+
+.add-suggestion-button {
+  padding: 6px 12px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.add-suggestion-button:hover {
+  background-color: #218838;
+}
+
+.suggestion-description {
+  margin: 0 0 12px 0;
+  color: #495057;
+  line-height: 1.5;
+}
+
+.suggestion-meta {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.suggestion-hints {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #eee;
+}
+
+.suggestion-hints h6 {
+  margin: 0 0 8px 0;
+  color: #2c3e50;
+}
+
+.suggestion-hints p {
+  margin: 0;
+  color: #6c757d;
+  line-height: 1.5;
+}
+
+.close-button {
+  margin-top: 20px;
+  padding: 8px 16px;
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.close-button:hover {
+  background-color: #5a6268;
+}

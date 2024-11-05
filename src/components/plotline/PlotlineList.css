@@ -1,0 +1,123 @@
+.plotline-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  overflow-y: auto;
+}
+
+.plotline-item {
+  background-color: white;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.plotline-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.plotline-header h4 {
+  margin: 0;
+  color: #2c3e50;
+}
+
+.plotline-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.plotline-actions select {
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 1px solid #ced4da;
+}
+
+.status-unused {
+  color: #6c757d;
+}
+
+.status-in-progress {
+  color: #ffc107;
+}
+
+.status-used {
+  color: #28a745;
+}
+
+.remove-button {
+  padding: 4px 8px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.remove-button:hover {
+  background-color: #c82333;
+}
+
+.plotline-content {
+  color: #495057;
+}
+
+.plotline-description {
+  margin: 0 0 12px 0;
+  line-height: 1.5;
+}
+
+.plotline-meta {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.importance {
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.9rem;
+}
+
+.importance-low {
+  background-color: #e9ecef;
+  color: #495057;
+}
+
+.importance-medium {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.importance-high {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.plotline-type {
+  color: #6c757d;
+}
+
+.target-chapter {
+  color: #0056b3;
+}
+
+.plotline-hints {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #eee;
+}
+
+.plotline-hints h5 {
+  margin: 0 0 8px 0;
+  color: #2c3e50;
+}
+
+.plotline-hints p {
+  margin: 0;
+  color: #6c757d;
+  line-height: 1.5;
+}
